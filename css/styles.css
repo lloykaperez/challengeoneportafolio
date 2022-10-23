@@ -56,27 +56,48 @@ section {
     display: flex;
 }
 
+
+button {
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ff6c9f;
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+button:hover {
+    border: none;
+    color: #ffffff;
+    background-color: #003cad;
+}
+
 .container {
     width: 94%;
 	margin: 0 auto;
 }
 
 
-
-
-
 /* Menu */
 
-.barra{
-    background-color: #ffffff;
-    margin-top: 2%;
-}
 
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: fixed;
+    background: white;
+    width: 94%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    transition: all 0.5s ease;
+}
+
+.menu.active{
+   
 }
 
 .headerMenu {
@@ -104,17 +125,20 @@ section {
     font-weight: bold;
 }
 
+/* Scroll */
 
-
+.scrol{
+    height: 100px;
+}
 
 
 /* Header  */
 
 .encabezadoDiv {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
-
 
 .linksEncabezado {
     display: flex;
@@ -182,7 +206,10 @@ section {
 .skills {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-top: 10%;
 }
 
 .tituloSkills {
@@ -228,11 +255,103 @@ section {
     justify-content: center;
 }
 
+/* Formacion */
 
+.formacion {
+    background-color: #fbeff7;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+}
+
+.cursosBox {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    
+}
+
+.cursosLista {
+    width: 268px;
+    margin-bottom: 5%;
+}
+
+
+.cursosItemImagen {
+    width: 268px;
+    height: 186px;
+	background-color: white;
+    border-radius: 20px;
+	text-align: center;
+	margin: 1%;
+	transition: .5s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+    margin-bottom: 6%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.imagenCurso {
+    width: 80%;
+    height: auto;
+}
+
+/* Proyectos */
+
+.proyectos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.experiencie__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.experience__img {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.experience__info {
+    width: 40%;
+    padding: 2%;
+}
+
+.iconosProyecto {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.iconPr {
+    width: 60px;
+}
 /* Contacto */
 
 .contacto {
     background-color: #fbeff7;
+    align-items: center;
+    justify-content: center;
 }
 
 .formularioContacto {
